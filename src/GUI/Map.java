@@ -57,7 +57,7 @@ public class Map extends javax.swing.JPanel {
         add(jButton1);
         jButton1.setBounds(220, 310, 60, 40);
 
-        jButton2.setText("Return");
+        jButton2.setText("Back");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.setMaximumSize(new java.awt.Dimension(85, 45));
         jButton2.setMinimumSize(new java.awt.Dimension(85, 45));

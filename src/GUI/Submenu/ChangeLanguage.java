@@ -38,7 +38,7 @@ public class ChangeLanguage extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(450, 700));
         setRequestFocusEnabled(false);
 
-        jButton1.setText("Return");
+        jButton1.setText("Back");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

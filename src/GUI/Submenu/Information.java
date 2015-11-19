@@ -20,7 +20,7 @@ public class Information extends javax.swing.JPanel {
      */
     public Information() {
         initComponents();
-        jButton1.setLocation(10, 10);
+        MenuBtn.setLocation(10, 10);
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,68 +31,154 @@ public class Information extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        MenuBtn = new javax.swing.JButton();
+        TicketInfoBtn = new javax.swing.JButton();
+        RouteInfoBtn = new javax.swing.JButton();
+        DepartureBtn = new javax.swing.JButton();
+        AboutUsBtn = new javax.swing.JButton();
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         jLabel1.setText("Information");
 
-        jButton1.setText("Return");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setMaximumSize(new java.awt.Dimension(85, 45));
-        jButton1.setMinimumSize(new java.awt.Dimension(85, 45));
-        jButton1.setPreferredSize(new java.awt.Dimension(85, 45));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        MenuBtn.setText("Menu");
+        MenuBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        MenuBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        MenuBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        MenuBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        MenuBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                MenuBtnActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Vi sejler op ad åen......");
+        TicketInfoBtn.setText("Ticket Information");
+        TicketInfoBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        TicketInfoBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        TicketInfoBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        TicketInfoBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TicketInfoBtnActionPerformed(evt);
+            }
+        });
+
+        RouteInfoBtn.setText("Route Information");
+        RouteInfoBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        RouteInfoBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        RouteInfoBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+
+        DepartureBtn.setText("Departure Time");
+        DepartureBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        DepartureBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        DepartureBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        DepartureBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepartureBtnActionPerformed(evt);
+            }
+        });
+
+        AboutUsBtn.setText("About Us");
+        AboutUsBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        AboutUsBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        AboutUsBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        AboutUsBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AboutUsBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(194, 194, 194)
+                        .addComponent(MenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98)
                         .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(200, Short.MAX_VALUE))
+                    .addComponent(TicketInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RouteInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DepartureBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AboutUsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 542, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(MenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(TicketInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(RouteInfoBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(DepartureBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(AboutUsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(295, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void MenuBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_MenuBtnActionPerformed
+
+    private void DepartureBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepartureBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DepartureBtnActionPerformed
+
+    private void TicketInfoBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TicketInfoBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TicketInfoBtnActionPerformed
+
+    private void AboutUsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutUsBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AboutUsBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton AboutUsBtn;
+    private javax.swing.JButton DepartureBtn;
+    private javax.swing.JButton MenuBtn;
+    private javax.swing.JButton RouteInfoBtn;
+    private javax.swing.JButton TicketInfoBtn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLayeredPane jLayeredPane1;
     // End of variables declaration//GEN-END:variables
 
 public void addActionListenerMenu(ActionListener l){
-	jButton1.addActionListener(l);
+	MenuBtn.addActionListener(l);
     }
-    
+
+public void addActionListenerDepartureTime(ActionListener l) {
+        DepartureBtn.addActionListener(l);
+    }
+
+public void addActionListenerTicketInformation(ActionListener l) {
+        TicketInfoBtn.addActionListener(l);
+    }    
+
+public void addActionListenerRoutInformation(ActionListener l) {
+        RouteInfoBtn.addActionListener(l);
+    }   
+
+public void addActionListenerAboutUs(ActionListener l) {
+        AboutUsBtn.addActionListener(l);
+    }    
+
 }

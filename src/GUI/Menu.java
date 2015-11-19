@@ -37,24 +37,11 @@ public class Menu extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        returnBtn = new javax.swing.JButton();
         informationBtn = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        mapBtn = new javax.swing.JButton();
+        QuizBtn = new javax.swing.JButton();
+        informationOnSightBtn = new javax.swing.JButton();
         languageBtn = new javax.swing.JButton();
-        departureBtn = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-
-        returnBtn.setText("Return");
-        returnBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        returnBtn.setMaximumSize(new java.awt.Dimension(85, 45));
-        returnBtn.setMinimumSize(new java.awt.Dimension(85, 45));
-        returnBtn.setPreferredSize(new java.awt.Dimension(85, 45));
-        returnBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                returnBtnActionPerformed(evt);
-            }
-        });
+        MenuBtn = new javax.swing.JButton();
 
         informationBtn.setText("Information");
         informationBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -67,24 +54,29 @@ public class Menu extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setText("Click me!");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setMaximumSize(new java.awt.Dimension(180, 70));
-        jButton3.setMinimumSize(new java.awt.Dimension(180, 70));
-        jButton3.setPreferredSize(new java.awt.Dimension(180, 70));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        QuizBtn.setText("Quiz");
+        QuizBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        QuizBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        QuizBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        QuizBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        QuizBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                QuizBtnActionPerformed(evt);
             }
         });
 
-        mapBtn.setText("Map");
-        mapBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        mapBtn.setMaximumSize(new java.awt.Dimension(180, 70));
-        mapBtn.setMinimumSize(new java.awt.Dimension(180, 70));
-        mapBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        informationOnSightBtn.setText("Information On Sights");
+        informationOnSightBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        informationOnSightBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        informationOnSightBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        informationOnSightBtn.setPreferredSize(new java.awt.Dimension(180, 70));
+        informationOnSightBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                informationOnSightBtnActionPerformed(evt);
+            }
+        });
 
-        languageBtn.setText("Change language");
+        languageBtn.setText("Change Language");
         languageBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         languageBtn.setMaximumSize(new java.awt.Dimension(180, 70));
         languageBtn.setMinimumSize(new java.awt.Dimension(180, 70));
@@ -95,61 +87,40 @@ public class Menu extends javax.swing.JPanel {
             }
         });
 
-        departureBtn.setText("Departure time");
-        departureBtn.setMaximumSize(new java.awt.Dimension(180, 70));
-        departureBtn.setMinimumSize(new java.awt.Dimension(180, 70));
-        departureBtn.setPreferredSize(new java.awt.Dimension(180, 70));
-        departureBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                departureBtnActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("jButton1");
+        MenuBtn.setText("Menu");
+        MenuBtn.setMaximumSize(new java.awt.Dimension(180, 70));
+        MenuBtn.setMinimumSize(new java.awt.Dimension(180, 70));
+        MenuBtn.setPreferredSize(new java.awt.Dimension(180, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(137, 137, 137)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(departureBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(languageBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(mapBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(informationBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(133, 133, 133))))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(returnBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(MenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(informationBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(informationOnSightBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(QuizBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(languageBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(260, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
-                .addGap(24, 24, 24)
+                .addComponent(MenuBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(informationBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(mapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(informationOnSightBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(QuizBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(languageBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(departureBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
-                .addComponent(returnBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(295, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -157,60 +128,41 @@ public class Menu extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_informationBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-if(Desktop.isDesktopSupported())
-{
-    try {
-        Desktop.getDesktop().browse(new URI("http://www.example.com"));
-    } catch (IOException ex) {
-        Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-    } catch (URISyntaxException ex) {
-        Logger.getLogger(Menu.class.getName()).log(Level.SEVERE, null, ex);
-    }
-}        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void QuizBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizBtnActionPerformed
 
-    private void returnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_returnBtnActionPerformed
+    }//GEN-LAST:event_QuizBtnActionPerformed
 
     private void languageBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_languageBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_languageBtnActionPerformed
 
-    private void departureBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departureBtnActionPerformed
+    private void informationOnSightBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informationOnSightBtnActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_departureBtnActionPerformed
+    }//GEN-LAST:event_informationOnSightBtnActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton departureBtn;
+    private javax.swing.JButton MenuBtn;
+    private javax.swing.JButton QuizBtn;
     private javax.swing.JButton informationBtn;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton informationOnSightBtn;
     private javax.swing.JButton languageBtn;
-    private javax.swing.JButton mapBtn;
-    private javax.swing.JButton returnBtn;
     // End of variables declaration//GEN-END:variables
 
     public void addActionListenerWelcomeScreen(ActionListener l){
-        returnBtn.addActionListener(l);
+        MenuBtn.addActionListener(l);
     }
     
     public void addActionListenerInformationScreen(ActionListener l){
         informationBtn.addActionListener(l);
     }
     
-        public void addActionListenerMapScreen(ActionListener l){
-        mapBtn.addActionListener(l);
-    }
-    
     public void addActionListenerChangeLanguage(ActionListener l){
         languageBtn.addActionListener(l);
     }
     
-    public void addActionListenerDeparture(ActionListener l){
-        departureBtn.addActionListener(l);
+    public void addActionListenerInformationOnSights(ActionListener l){
+        informationOnSightBtn.addActionListener(l);
     }
 
 }
