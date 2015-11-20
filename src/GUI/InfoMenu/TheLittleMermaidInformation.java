@@ -5,7 +5,11 @@
  */
 package GUI.InfoMenu;
 
+import GUILogic.GuiController;
 import java.awt.event.ActionListener;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.JTextPane;
 
 /**
  *
@@ -31,6 +35,10 @@ public class TheLittleMermaidInformation extends javax.swing.JPanel {
 
         BackBtn = new javax.swing.JButton();
         ShowOnMapBtn = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        TheLittleMermaidTextPane = new javax.swing.JTextPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         BackBtn.setText("Back");
         BackBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -50,25 +58,54 @@ public class TheLittleMermaidInformation extends javax.swing.JPanel {
             }
         });
 
+        TheLittleMermaidTextPane.setEditable(false);
+        jScrollPane2.setViewportView(TheLittleMermaidTextPane);
+
+        jLabel1.setText("Billede");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setText("The Little Mermaid");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ShowOnMapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ShowOnMapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(202, 202, 202)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(130, 130, 130)
+                                .addComponent(jLabel2)))
+                        .addGap(0, 111, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(595, 595, 595)
+                .addGap(23, 23, 23)
+                .addComponent(jLabel2)
+                .addGap(151, 151, 151)
+                .addComponent(jLabel1)
+                .addGap(75, 75, 75)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BackBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ShowOnMapBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(57, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -86,10 +123,25 @@ public class TheLittleMermaidInformation extends javax.swing.JPanel {
     public void addActionListenerShowOnMap(ActionListener l) {
         ShowOnMapBtn.addActionListener(l);
     }
+    
+    
+    public void setTheLittleMermaidTextPane(JTextPane theLittleMermaidTextPane) {
+        this.TheLittleMermaidTextPane = theLittleMermaidTextPane;
+    }
+
+    
+    public void setTextPane(String text) {
+        TheLittleMermaidTextPane.setText(text);
+        System.out.println("Blob");
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackBtn;
     private javax.swing.JButton ShowOnMapBtn;
+    public javax.swing.JTextPane TheLittleMermaidTextPane;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }

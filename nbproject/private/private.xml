@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/InfoMenu/ChristiansborgPalaceInformation.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/Map.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/InfoMenu/TheOldStockExchangeInformation.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/Submenu/Information.java</file>
+            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/Logic/FileReader.java</file>
+            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/Main.java</file>
+            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/Submenu/ChangeLanguage.java</file>
+            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/InfoMenu/OperaInformation.java</file>
             <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/ContainerPanel.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/Menu.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/Submenu/InformationOnSights.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/InfoMenu/OurSavioursChurchInformation.java</file>
             <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUILogic/GuiController.java</file>
-            <file>file:/C:/Users/ejer/Documents/GitHub/CanalToursApp/src/GUI/InfoMenu/KastelletInformation.java</file>
         </group>
     </open-files>
 </project-private>
