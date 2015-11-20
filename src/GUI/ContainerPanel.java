@@ -42,7 +42,7 @@ public class ContainerPanel extends JFrame {
     public static final String OurSavioursChurchInformation = "OurSavioursChurchInformation";
     public static final String TheOldStockExchangeInformation = "TheOldStockExchangeInformation";
     public static final String ChristiansborgPalaceInformation = "ChristiansborgPalaceInformation";
-    
+
     private static JPanel contentPane;
     CardLayout c;
 
@@ -118,19 +118,19 @@ public class ContainerPanel extends JFrame {
 
         TFI = new TrekronerFortressInformation();
         contentPane.add(TFI, TrekronerFortressInformation);
-        
+
         TBDI = new TheBlackDiamondInformation();
         contentPane.add(TBDI, TheBlackDiamondInformation);
-        
+
         KI = new KastelletInformation();
         contentPane.add(KI, KastelletInformation);
-                
+
         OSCI = new OurSavioursChurchInformation();
         contentPane.add(OSCI, OurSavioursChurchInformation);
-                
+
         TOSEI = new TheOldStockExchangeInformation();
         contentPane.add(TOSEI, TheOldStockExchangeInformation);
-        
+
         CPI = new ChristiansborgPalaceInformation();
         contentPane.add(CPI, ChristiansborgPalaceInformation);
     }
@@ -202,6 +202,10 @@ public class ContainerPanel extends JFrame {
 
     public TheOldStockExchangeInformation getTOSEI() {
         return TOSEI;
+    }
+
+    public OurSavioursChurchInformation getOSCI() {
+        return OSCI;
     }
 
     public void show(String card) {

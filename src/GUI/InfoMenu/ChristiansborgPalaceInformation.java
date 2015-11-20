@@ -5,6 +5,8 @@
  */
 package GUI.InfoMenu;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author ejer
@@ -83,4 +85,13 @@ public class ChristiansborgPalaceInformation extends javax.swing.JPanel {
     private javax.swing.JButton BackBtn;
     private javax.swing.JButton ShowOnMapBtn;
     // End of variables declaration//GEN-END:variables
+
+    public void addActionListenerMenu(ActionListener l) {
+        BackBtn.addActionListener(l);
+    }
+
+    public void addActionListenerShowOnMap(ActionListener l) {
+        ShowOnMapBtn.addActionListener(l);
+    }
+
 }

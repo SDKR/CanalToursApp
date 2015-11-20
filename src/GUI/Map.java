@@ -94,7 +94,7 @@ public class Map extends javax.swing.JPanel {
     public void addActionListenerOperaInformation(ActionListener l) {
         jButton1.addActionListener(l);
     }
-        public void addActionListenerMenu(ActionListener l) {
+        public void addActionListenerBack(ActionListener l) {
         jButton2.addActionListener(l);
     }
     

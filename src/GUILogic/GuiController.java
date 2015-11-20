@@ -162,7 +162,7 @@ public class GuiController {
         CP.getInfo().addActionListenerAboutUs(new AboutUs());
         
         CP.getMap().addActionListenerOperaInformation(new OperaInformationScreen());
-        CP.getMap().addActionListenerMenu(new Menu());
+        CP.getMap().addActionListenerBack(new InformationOnSights());
         
         CP.getOI().addActionListenerMenu(new InformationOnSights());
         CP.getOI().addActionListenerShowOnMap(new MapScreen());
@@ -190,9 +190,20 @@ public class GuiController {
         CP.getTLMI().addActionListenerMenu(new InformationOnSights());
         CP.getTLMI().addActionListenerShowOnMap(new MapScreen());
         
-        CP.getTFI().addActionListenerMenu(new Menu());
+        CP.getTFI().addActionListenerMenu(new InformationOnSights());
         CP.getTFI().addActionListenerShowOnMap(new MapScreen());
         
-        CP.getCPI().add
+        CP.getCPI().addActionListenerMenu(new InformationOnSights());
+        CP.getCPI().addActionListenerShowOnMap(new MapScreen());
+        
+        CP.getTBDI().addActionListenerMenu(new InformationOnSights());
+        CP.getTBDI().addActionListenerShowOnMap(new MapScreen());
+        
+        CP.getKI().addActionListenerMenu(new InformationOnSights());
+        CP.getKI().addActionListenerShowOnMap(new MapScreen());
+        
+        CP.getOSCI().addActionListenerMenu(new InformationOnSights());
+        CP.getOSCI().addActionListenerShowOnMap(new MapScreen());
+        
     }
 }
